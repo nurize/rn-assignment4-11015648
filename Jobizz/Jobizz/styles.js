@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -88,6 +88,10 @@ const styles = StyleSheet.create({
   }, 
   accountText: {
     color: "#AFB0B6",
+  },
+  errorMessage: {
+    color: "red",
+    marginBottom: 10,
   }
 });
 

@@ -1,15 +1,17 @@
-import { Text, View, Pressable, TextInput, Image } from 'react-native';
-import styles from './styles.js';
-import Login from './myComponents/LoginPage.js';
+import Login from './screens/LoginPage.js';
+import Home from './screens/HomePage.js'
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+const Stack = createNativeStackNavigator()
 export default function App() {
-  const appleIcon = require("./assets/apple-icon.jpg");
-  const googleIcon = require("./assets/google-icon.png");
-  const facebookIcon = require("./assets/facebook-icon.jpg");
   return (
-    <View style={styles.container}>
-      <Login googleIcon={googleIcon} facebookIcon={facebookIcon} appleIcon={appleIcon}/>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='Log In'>
+        <Stack.Screen name="Log In" component={Login} />
+        <Stack.Screen name="Home" component={Home} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
