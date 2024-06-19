@@ -5,12 +5,12 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: "flex-start",
-    paddingTop: 150,
+    paddingTop: 130,
     paddingHorizontal: 30,
     flexDirection: "column",
     alignContent: "flex-start",
     rowGap: 10,
-    fontFamily: "Poppins"
+    fontFamily: "Poppins",
   },
   title: {
     fontFamily: 'Poppins', 
@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     color: "#AFB0B6",
   }, 
   textInput: {
+    fontFamily: 'Poppins',
     width: 360,
     height: 60,
     borderRadius: 10,
@@ -60,6 +61,7 @@ const styles = StyleSheet.create({
     fontSize: 18
   }, 
   continueText: {
+    fontFamily: 'Poppins',
     flexDirection: "row",
     columnGap: 10,
     marginTop: 70,
@@ -79,17 +81,20 @@ const styles = StyleSheet.create({
    marginBottom: 20,
   }, 
   account: {
+    fontFamily: 'Poppins',
     paddingHorizontal: 65,
     flexDirection: "row", 
     columnGap: 5
   }, 
   register: {
+    fontFamily: 'Poppins',
     color: "#356899"
   }, 
   accountText: {
     color: "#AFB0B6",
   },
   errorMessage: {
+    fontFamily: 'Poppins',
     color: "red",
     marginBottom: 10,
   }, 
@@ -97,7 +102,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#FAFAFD",
     flexDirection: "column",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    paddingTop: 60,
   },
   profile: {
     flexDirection: "row",
@@ -107,10 +113,12 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   usernameHeader: {
+    fontFamily: 'Poppins',
     fontWeight: "700",
     fontSize: 24
   }, 
   emailHeader: {
+    fontFamily: 'Poppins',
     fontWeight: "400",
     fontSize: 20,
     color: "#95969D",
@@ -135,7 +143,11 @@ const styles = StyleSheet.create({
     gap: 20,
     paddingHorizontal: 20,
   },
-  search: {
+  searchIcon: {
+    marginRight: 10,
+  },
+  searchContainer: {
+    flexDirection: "row",
     width: 280,
     height: 58,
     borderRadius: 12,
@@ -143,12 +155,16 @@ const styles = StyleSheet.create({
     backgroundColor: "#F2F2F3",
     borderWidth: 1,
     padding: 15,
+  },
+  search: {
+    flex: 1,
   }, 
   searchButton: {
     height: 58,
     width: 60,
   }, 
   searchDesign: {
+    fontFamily: 'Poppins',
     width: 35,
     heigth: 25,
     alignSelf: "center",
@@ -165,11 +181,13 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   }, 
   jobsHeader: {
+    fontFamily: 'Poppins',
     color: "#0D0D26",
     fontSize: 19,
     fontWeight: "600",
   }, 
   viewJobs: {
+    fontFamily: 'Poppins',
     color: "#95969D",
     fontSize: 14,
     fontWeight: "400",
@@ -205,12 +223,14 @@ const styles = StyleSheet.create({
     padding: 0,
   }, 
   jobTitle: {
+    fontFamily: 'Poppins',
     color: "#FFFFFF",
     fontSize: 18, 
     fontWeight: "600",
     marginBottom: 5,
   },
   jobCompany: {
+    fontFamily: 'Poppins',
     color: "#FFFFFF",
     fontSize: 16,
     fontWeight: "400",
@@ -220,6 +240,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between"
   }, 
   salary: {
+    fontFamily: 'Poppins',
     color: "#FFFFFF", 
     fontWeight: "500",
     fontSize: 15
@@ -244,30 +265,36 @@ const styles = StyleSheet.create({
     marginRight: 15,
   }, 
   jobName: {
+    fontFamily: 'Poppins',
     marginRight: 50,
     rowGap: 10,
     paddingBottom: 15,
   },
   position: {
+    fontFamily: 'Poppins',
     fontSize: 15,
     fontWeight: "700",
     color: "#0D0D26"
   }, 
   company: {
+    fontFamily: 'Poppins',
     fontWeight: "400",
     fontSize: 13,
     color: "#0D0D26",
   }, 
   locationSalary: {
+    fontFamily: 'Poppins',
     rowGap: 5,
   },
   jobSalary: {
+    fontFamily: 'Poppins',
     fontSize: 12,
     fontWeight: "400",
     color: "#0D0D26",
     alignSelf: "flex-end",
   }, 
   companyLocation: {
+    fontFamily: 'Poppins',
     fontSize: 13,
     fontWeight: "400",
     color: "#0D0D26",
