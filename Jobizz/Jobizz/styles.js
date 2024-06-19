@@ -94,14 +94,14 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   }, 
   home: {
-    paddingHorizontal: 20,
-    backgroundColor: "#FAFAFD",
     flex: 1,
+    backgroundColor: "#FAFAFD",
     flexDirection: "column",
     justifyContent: "space-between"
   },
   profile: {
     flexDirection: "row",
+    paddingHorizontal: 20,
     justifyContent: "space-between",
     marginTop: 30,
     marginBottom: 30,
@@ -133,6 +133,7 @@ const styles = StyleSheet.create({
   searchArea: {
     flexDirection: "row",
     gap: 20,
+    paddingHorizontal: 20,
   },
   search: {
     width: 280,
@@ -159,6 +160,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
   },
   jobs: {
+    paddingHorizontal: 20,
     flexDirection: "row",
     justifyContent: "space-between",
   }, 
@@ -172,6 +174,9 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: "400",
   }, 
+  jobCards: {
+    paddingLeft: 20,
+  },
   jobCard: {
     boderRadius: 24,
     width: 310,
@@ -182,8 +187,8 @@ const styles = StyleSheet.create({
     borderRadius: 24,
     flexDirection: "column",
     justifyContent: "space-between",
-    marginRight: 10,
-    marginBottom: 20,
+    marginBottom: 10,
+    paddingLeft: 20,
   },
   jobHeader: {
     flexDirection: "row",
@@ -220,10 +225,52 @@ const styles = StyleSheet.create({
     fontSize: 15
   }, 
   popularJobs: {
-    marginTop: 0
+    marginTop: 40, 
+    flex: 1, 
+    paddingHorizontal: 20,
   }, 
   jobTab: {
-    flexDirection: "row"
+    flexDirection: "row",
+    height: 100,
+    borderRadius: 15,
+    paddingTop: 20,
+    paddingHorizontal: 20,
+    marginBottom: 10,
+    marginTop: 10,
+    marginHorizontal: 25,
+    backgroundColor: "#FFFFFF"
+  }, 
+  companyLogo: {
+    marginRight: 15,
+  }, 
+  jobName: {
+    marginRight: 50,
+    rowGap: 10,
+    paddingBottom: 15,
+  },
+  position: {
+    fontSize: 15,
+    fontWeight: "700",
+    color: "#0D0D26"
+  }, 
+  company: {
+    fontWeight: "400",
+    fontSize: 13,
+    color: "#0D0D26",
+  }, 
+  locationSalary: {
+    rowGap: 5,
+  },
+  jobSalary: {
+    fontSize: 12,
+    fontWeight: "400",
+    color: "#0D0D26",
+    alignSelf: "flex-end",
+  }, 
+  companyLocation: {
+    fontSize: 13,
+    fontWeight: "400",
+    color: "#0D0D26",
   }
 });
 

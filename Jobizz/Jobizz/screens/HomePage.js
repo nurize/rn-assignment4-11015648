@@ -1,5 +1,6 @@
-import { Text, View, Pressable, TextInput, Image, RootTagContext, ImageBackground, FlatList } from 'react-native';
+import { Text, View, Pressable, TextInput, Image, RootTagContext, ImageBackground, FlatList, ScrollView } from 'react-native';
 import styles from '../styles';
+import { SafeAreaView } from 'react-native-safe-area-context';
 //import { useState } from 'react';
 
 export default function Home({route}) {
@@ -30,6 +31,7 @@ export default function Home({route}) {
 
   return (
     <View style={styles.home}> 
+    <ScrollView>
       <View style={styles.profile}>
         <View>
           <Text style={styles.usernameHeader}> {displayText} </Text>
@@ -75,17 +77,19 @@ export default function Home({route}) {
             const backgroundColor = parseInt(item.id) === 1 ? "#2fa7ca" : "#04284A";
 
             return (
-              <View style={[styles.jobCard, {backgroundColor: backgroundColor}]} key={item.id}>
-                <View style={styles.jobHeader}>
-                   <Image style={styles.jobLogo} source={logo}/>
-                  <View >
-                    <Text style={styles.jobTitle}>{item.jobTitle}</Text>
-                    <Text style={styles.jobCompany}>{item.Company}</Text>
+              <View style={styles.jobCards}>
+                <View style={[styles.jobCard, {backgroundColor: backgroundColor}]} key={item.id}>
+                  <View style={styles.jobHeader}>
+                    <Image style={styles.jobLogo} source={logo}/>
+                    <View >
+                      <Text style={styles.jobTitle}>{item.jobTitle}</Text>
+                      <Text style={styles.jobCompany}>{item.Company}</Text>
+                    </View>
                   </View>
-                </View>
-                <View style={styles.jobFooter}>
-                  <Text style={styles.salary}> {item.Salary} </Text>
-                  <Text style={styles.salary}> {item.Location} </Text>
+                  <View style={styles.jobFooter}>
+                    <Text style={styles.salary}> {item.Salary} </Text>
+                    <Text style={styles.salary}> {item.Location} </Text>
+                  </View>
                 </View>
               </View>
             )
@@ -94,7 +98,6 @@ export default function Home({route}) {
           showsHorizontalScrollIndicator={false}
         />
       </View>
-
       <View style={styles.popuplarJobs}>
         <View style={styles.jobs}>
             <Text style={styles.jobsHeader}>Popular Jobs</Text>
@@ -102,9 +105,8 @@ export default function Home({route}) {
               <Text style={styles.viewJobs}>See all</Text>
             </Pressable>
           </View>
-        </View>
 
-       {/*} <FlatList 
+      <FlatList 
           data={popularJobs} 
           renderItem={({item}) => {
             let logo = "";
@@ -121,12 +123,20 @@ export default function Home({route}) {
                 <View style={styles.companyLogo}>
                   <Image source={logo} />
                 </View>
-                <View></View>
-                <View></View>
+                <View style={styles.jobName}>
+                  <Text style={styles.position}>{item.job_title}</Text>
+                  <Text style={styles.company}>{item.company}</Text>
+                </View>
+                <View style={styles.locationSalary}>
+                  <Text style={styles.jobSalary}>{item.salary}</Text>
+                  <Text style={styles.companyLocation}>{item.location}</Text>
+                </View>
               </View>
             )
           }} 
-        /> */}
+        />
+      </View>
+      </ScrollView>
     </View>
   )
 }
