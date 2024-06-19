@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "job_title": "Jr Executive",
+    "company": "Burger King",
+    "salary": "$96,000/y",  
+    "location": "Los Angeles, US"  
+  },
+  {
+    "id": "2",
+    "job_title": "Product Manager",
+    "company": "Beats",
+    "salary": "$84,000/y",
+    "location": "Florida, US"  
+  },
+  {
+    "id": "3",
+    "job_title": "Product Manager",
+    "company": "Facebook",
+    "salary": "$86,000/y",
+    "location": "Florida, US"  
+  }
+]

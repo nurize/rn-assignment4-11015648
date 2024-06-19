@@ -1,0 +1,16 @@
+[
+  {
+  "id" : "1",
+  "jobTitle" : "Software Engineer",
+  "Company" : "Facebook",
+  "Salary" : "$180,000",
+  "Location" : "Accra, Ghana" 
+  }, 
+  {
+    "id" : "2",
+    "jobTitle" : "Data Scientist",
+    "Company" : "Google",
+    "Salary" : "$150,000",
+    "Location" : "Lagos, Nigeria"
+  } 
+]
